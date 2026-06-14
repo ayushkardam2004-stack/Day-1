@@ -1,0 +1,65 @@
+*{
+    text-align: center;
+    list-style: none;
+}
+#navbar{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+#navbar li{
+    padding: 25px;
+    font-size: 20px;
+}
+body{
+    padding: 20px;
+}
+h1{
+    color: grey;
+}
+h2{
+    color: green;
+}
+#skills{
+    text-decoration: underline;
+}
+#projects h4{
+    text-decoration: underline;
+    color:maroon;
+}
+#skills div, #projects div{
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+#skill{
+    display: flex;
+    justify-content: center;
+}
+#skill li{
+    list-style: none;
+    padding: 20px;
+
+}
+@media (max-width:760px) {
+    #skill{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:760px) {
+    #navbar{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+@media (max-width:760px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
